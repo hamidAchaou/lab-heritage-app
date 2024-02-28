@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Models\Formateur\Formateur;
-use App\Models\Stagaire\Stagaire;
+use App\Models\Stagiaire\Stagiaire;
 use Illuminate\Support\Facades\Route;
 
 class PersonnesController extends Controller
@@ -84,8 +84,8 @@ class PersonnesController extends Controller
 
         if($model === 'Formateur'){
             $repository = new $path(new Formateur);
-        }elseif($model === 'Stagaire'){
-            $repository = new $path(new Stagaire);
+        }elseif($model === 'Stagiaire'){
+            $repository = new $path(new Stagiaire);
         }
         return $repository;
     }
