@@ -40,7 +40,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/personnes/formateur.php'));
 
             Route::middleware('web')
-                ->group(base_path('routes/personnes/stagaire.php'));
+                ->group(base_path('routes/personnes/stagiaire.php'));
         });
     }
 }

@@ -6,9 +6,8 @@
 </li>
 
 <li class="nav-item">
-  <a href="{{ route('stagaire.index') }}" class="nav-link {{ Request::is('stagaire.index') ? 'active' : '' }}">
-    <i class="nav-icon fas fa-users"></i>
-    <p>Stagaires</p>
+  <a href="{{ route('stagiaire.index') }}" class="nav-link {{ Request::is('stagiaire.index') ? 'active' : '' }}">
+      <i class="nav-icon fas fa-users"></i>
+      <p>Stagiaires</p>
   </a>
 </li>
-
